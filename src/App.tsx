@@ -79,7 +79,7 @@ function App() {
           <div className="mt-10">
             <h2 className="text-center text-2xl m-8">Experiencia</h2>
             <p className="text-center max-w-3xl mx-auto leading-relaxed text-lg mb-8">
-              Con más de 3 años de experiencia en el desarrollo de software, he
+              Con más de 4 años de experiencia en el desarrollo de software, he
               trabajado en Coopebombas donde he evolucionado desde roles de
               soporte técnico hasta convertirme en desarrollador Full Stack. Mi
               trayectoria demuestra un crecimiento constante y adaptabilidad a
@@ -124,6 +124,68 @@ function App() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="tecnologias" className="mt-16">
+          <div>
+            <h2 className="text-center text-2xl m-8">Tecnologías</h2>
+            <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+              {/* Tecnologías Frontend */}
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-blue-400 mr-2">●</span>
+                <span>React</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-green-400 mr-2">●</span>
+                <span>Vue.js</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-blue-300 mr-2">●</span>
+                <span>TypeScript</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-cyan-400 mr-2">●</span>
+                <span>Tailwind CSS</span>
+              </div>
+              
+              {/* Tecnologías Backend */}
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-purple-400 mr-2">●</span>
+                <span>.NET Core</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-green-500 mr-2">●</span>
+                <span>Node.js</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-red-400 mr-2">●</span>
+                <span>SQL Server</span>
+              </div>
+              
+              {/* Tecnologías Móvil */}
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-orange-400 mr-2">●</span>
+                <span>Swift</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-blue-500 mr-2">●</span>
+                <span>SwiftUI</span>
+              </div>
+              
+              {/* Tecnologías IA */}
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-yellow-400 mr-2">●</span>
+                <span>Python</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-purple-500 mr-2">●</span>
+                <span>LLMs</span>
+              </div>
+              <div className="flex items-center bg-zinc-900/30 px-4 py-2 rounded-full">
+                <span className="text-green-400 mr-2">●</span>
+                <span>RAG</span>
               </div>
             </div>
           </div>
