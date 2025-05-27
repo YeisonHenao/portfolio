@@ -5,10 +5,12 @@ import About from './components/sections/About/About';
 import Skills from './components/sections/Skills/Skills';
 import Experience from './components/sections/Experience/Experience';
 import Technologies from './components/sections/Technologies/Technologies';
+import ParticlesBackground from './components/layout/ParticlesBackground/ParticlesBackground';
 
 function App() {
   return (
     <>
+      <ParticlesBackground />
       <Header />
       <main>
         <Hero />

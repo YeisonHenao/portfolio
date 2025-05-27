@@ -1,5 +1,6 @@
 import { Experience } from '../../../types';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface TimelineItemProps extends Experience {}
 
 const TimelineItem = ({ company, period, description }: TimelineItemProps) => {

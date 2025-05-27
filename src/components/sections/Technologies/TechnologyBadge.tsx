@@ -1,5 +1,6 @@
 import { Technology } from '../../../types';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface TechnologyBadgeProps extends Technology {}
 
 const TechnologyBadge = ({ name, color }: TechnologyBadgeProps) => {
