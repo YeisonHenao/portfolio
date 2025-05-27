@@ -9,7 +9,7 @@ import ParticlesBackground from './components/layout/ParticlesBackground/Particl
 
 function App() {
   return (
-    <>
+    <div className="relative min-h-screen">
       <ParticlesBackground />
       <Header />
       <main>
@@ -20,7 +20,7 @@ function App() {
         <Technologies />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
