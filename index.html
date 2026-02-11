@@ -7,11 +7,82 @@
     <meta name="description" content="Portfolio de Yeison Henao, desarrollador Full Stack especializado en .NET, Vue.js y desarrollo móvil iOS.">
     <meta name="keywords" content="Yeison Henao, desarrollador Full Stack, .NET, Vue.js, iOS, Swift, SwiftUI, Tailwind CSS">
     <meta name="author" content="Yeison Henao">
-    <link href="/dist/styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/styles/variables.css">
+    <link href="/src/styles/main.css" rel="stylesheet">
     <title>Yeison Henao - Portfolio</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    
+    <div class="parallax-bg">
+        <div class="blob" style="width: 500px; height: 500px; top: -10%; left: -10%;"></div>
+        <div class="blob" style="width: 400px; height: 400px; bottom: 10%; right: 5%; animation-delay: -5s;"></div>
+    </div>
+
+    <nav>
+        <div class="nav-content container" style="max-width: 1100px; margin: 0 auto; padding: 0 2rem;">
+            <div class="logo" style="font-weight: 700; font-size: 1.5rem;">DB<span style="color:var(--primary)">.</span></div>
+            <div class="links">
+                <a href="#proyectos" style="margin-left: 2rem; color: var(--text-main)">Proyectos</a>
+                <a href="#experiencia" style="margin-left: 2rem; color: var(--text-main)">Experiencia</a>
+                <a href="#contacto" class="btn" style="margin-left: 2rem; padding: 0.5rem 1rem;">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 1100px; margin: 0 auto; padding: 0 2rem;">
+        
+        <section id="hero" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+            <h1 class="gradient-text" style="font-size: 4rem; line-height: 1.1;">Hola, soy <br> Especialista en Datos.</h1>
+            <p style="max-width: 600px; font-size: 1.2rem; margin-top: 1.5rem;">
+                Apasionado por las arquitecturas SQL y NoSQL. Construyo soluciones escalables y eficientes.
+            </p>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2 style="font-size: 2.5rem;">Habilidades Profesionales</h2>
+            <div class="grid">
+                <div class="glass-card">
+                    <h3 style="color: var(--primary)">Bases de Datos SQL</h3>
+                    <p>MySQL, PostgreSQL, Oracle. Diseño de esquemas complejos y optimización de queries.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="color: var(--primary)">Bases de Datos NoSQL</h3>
+                    <p>MongoDB, Redis. Manejo de grandes volúmenes de datos y esquemas flexibles.</p>
+                </div>
+                <div class="glass-card">
+                    <h3 style="color: var(--primary)">Frontend Dev</h3>
+                    <p>HTML5, CSS3 Moderno (Variables, Grid, Flexbox) y JavaScript Vanilla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="reveal">
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Mi Trayectoria</h2>
+            <div class="timeline" style="border-left: 2px solid var(--primary); padding-left: 2rem; position: relative;">
+                <div class="timeline-item" style="margin-bottom: 3rem;">
+                    <span style="color: var(--accent); font-weight: 700;">2024 - Actualidad</span>
+                    <h3>Senior Database Admin</h3>
+                    <p>Liderando la migración de sistemas legacy a arquitecturas modernas en la nube.</p>
+                </div>
+                <div class="timeline-item">
+                    <span style="color: var(--accent); font-weight: 700;">2022 - 2023</span>
+                    <h3>Junior Web Developer</h3>
+                    <p>Desarrollo de interfaces reactivas y gestión de bases de datos relacionales.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p>© 2026 - Hecho con código y pasión.</p>
+    </footer>
+
+    <script type="module" src="/src/JS/main.js"></script>
   </body>
 </html>
