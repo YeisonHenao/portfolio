@@ -1,8 +1,8 @@
 /* RESET & BASE */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { 
-    background-color: var(--bg-dark); 
-    color: var(--text-main); 
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
@@ -83,3 +83,9 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* Cursor glow element (created dynamically by JS) */
+.cursor-glow{position:fixed;left:0;top:0;width:140px;height:140px;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);background:radial-gradient(circle at 40% 30%, hsl(var(--glow) / 0.22), transparent 45%);filter:blur(22px);mix-blend-mode:screen}
+
+/* Scroll progress bar default hidden - JS will set transform scaleX based on scroll */
+.scroll-progress-bar{transform:scaleX(0);transform-origin:left}
